@@ -1,0 +1,30 @@
+.why-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  @media screen and (min-width: 1024px) {
+    gap: 16px;
+  }
+}
+
+.why-item {
+  border-radius: 50px;
+  padding: 20px;
+
+  width: calc((100% - 8px) / 2);
+
+  background-color: var(--clear-navy);
+
+  @media screen and (min-width: 1024px) {
+    padding: 20px 28px;
+    width: calc((100% - 32px) / 3);
+  }
+}
+
+.why-icon {
+  color: var(--dark-grey);
+  display: block;
+  margin: 0 auto 16px;
+}

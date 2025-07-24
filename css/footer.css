@@ -1,0 +1,164 @@
+#footer {
+  padding: 20px;
+  color: var(--dairy);
+}
+
+.footer-container {
+  max-width: 335px;
+
+  padding: 32px 16px;
+  border-radius: 50px;
+
+  background-color: var(--grey);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 92px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 64px 76px;
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+
+#footer address {
+  padding-left: 16px;
+  margin-top: 16px;
+}
+
+.footer-adr-list {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+
+  justify-content: center;
+
+  max-width: 330px;
+
+  @media screen and (min-width: 1024px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.footer-adr-item {
+  display: flex;
+  gap: 4px;
+}
+
+#footer address a {
+  color: inherit;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-icon,
+.form-icon,
+.form-btn-icon {
+  fill: var(--dairy);
+}
+
+/* 
+
+
+
+ */
+
+.form-field {
+  margin-bottom: 12px;
+
+  position: relative;
+}
+
+.form-input {
+  border: 1px solid var(--dairy);
+  border-radius: 12px;
+  background-color: transparent;
+
+  padding: 14px 45px;
+
+  width: 303px;
+  height: 40px;
+
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--dairy);
+
+  @media screen and (min-width: 1024px) {
+    width: 360px;
+  }
+}
+.form-input::placeholder {
+  color: var(--dairy);
+  opacity: 0.7;
+}
+
+.form-icon {
+  position: absolute;
+  top: 13px;
+  left: 16px;
+}
+
+#footerForm p {
+  padding: 4px 4px 0;
+  display: none;
+}
+
+.form-input:not(:placeholder-shown):invalid ~ #formTextInvalid {
+  display: block;
+}
+.form-input:not(:placeholder-shown):valid ~ #formTextValid {
+  display: block;
+}
+
+.form-input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+.form-input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+.form-input:focus:invalid {
+  border-color: red;
+}
+.form-input:focus:valid {
+  border-color: green;
+}
+
+.form-input:not(:placeholder-shown):invalid ~ .form-icon {
+  fill: red;
+}
+.form-input:not(:placeholder-shown):valid ~ .form-icon {
+  fill: green;
+}
+
+.form-textarea {
+  height: 80px;
+
+  resize: none;
+}
+
+#formBtn {
+  border-radius: 22px;
+  color: inherit;
+
+  display: flex;
+  gap: 10px;
+
+  margin-left: auto;
+}
+
+/* 
+
+ */
+:root {
+  --navy: #1b4f72;
+  --clear-navy: rgba(27, 79, 114, 0.4);
+  --grey: #2b2b2b;
+  --dark-grey: #181818;
+  --dairy: #fcfcfc;
+  --white: #fff;
+  --clear-grey: rgba(43, 43, 43, 0.55);
+  --font-family: 'EB Garamond', sans-serif;
+}

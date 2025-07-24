@@ -1,0 +1,52 @@
+.who-list {
+  display: flex;
+  gap: 32px;
+
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.who-item {
+  border-radius: 16px;
+  padding: 22px;
+
+  min-width: 100%;
+  scroll-snap-align: start;
+
+  box-shadow: 0 4px 4px 2px rgba(43, 43, 43, 0.15);
+  background: var(--clear-navy);
+
+  @media screen and (min-width: 1024px) {
+    min-width: calc((100% - 32px) / 2);
+  }
+}
+
+.who-item h3 {
+  margin: 8px 0;
+}
+
+.who-icon {
+  color: var(--dark-grey);
+  display: block;
+  margin: 0 auto;
+}
+
+#whoHintText {
+  margin-top: 8px;
+  padding: 0 24px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 48px;
+  }
+}
+
+:root {
+  --navy: #1b4f72;
+  --clear-navy: rgba(27, 79, 114, 0.4);
+  --grey: #2b2b2b;
+  --dark-grey: #181818;
+  --dairy: #fcfcfc;
+  --white: #fff;
+  --clear-grey: rgba(43, 43, 43, 0.55);
+  --font-family: 'EB Garamond', sans-serif;
+}

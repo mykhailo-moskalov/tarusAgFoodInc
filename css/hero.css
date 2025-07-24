@@ -1,0 +1,33 @@
+#hero {
+  max-width: 1024px;
+  padding: 139px 0;
+  margin: 0 auto;
+  background: linear-gradient(var(--clear-grey), var(--clear-grey)),
+    url('../img/hero-bg.webp') no-repeat center/cover;
+
+  @media screen and (min-width: 1024px) {
+    padding: 212px 0 140px;
+  }
+}
+
+#heroTitle {
+  /* @media screen and (max-width: 1023px) {
+    max-width: 319px;
+  } */
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 16px;
+  }
+}
+
+.hero-container {
+  @media screen and (min-width: 1024px) {
+    padding-right: 392px;
+  }
+}
+
+.hero-anchor {
+  margin-top: 16px;
+  color: var(--white);
+  border-radius: 25px;
+}
