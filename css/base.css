@@ -115,17 +115,15 @@ button,
   background-color: var(--navy);
   border: 2px solid var(--navy);
 
+  &:hover,
+  &:focus {
+    transform: scale(1.08);
+    background-color: var(--clear-navy);
+  }
+
   @media screen and (min-width: 1024px) {
     padding: 10px 32px;
   }
-}
-
-button:hover,
-button:focus,
-.btn:hover,
-.btn:focus {
-  transform: scale(1.08);
-  background-color: var(--clear-navy);
 }
 
 section {

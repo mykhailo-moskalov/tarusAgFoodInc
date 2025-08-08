@@ -17,27 +17,16 @@
   color: var(--white);
 }
 
-.products-list {
-  display: flex;
-  gap: 32px;
-
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-}
-
 .products-item {
   border-radius: 50px;
   padding: 24px 48px;
-
-  min-width: 100%;
-  scroll-snap-align: start;
+  height: 340px;
 
   box-shadow: 0 4px 4px 2px rgba(43, 43, 43, 0.15);
   background: var(--white);
 
   @media screen and (min-width: 1024px) {
     padding: 24px 96px;
-    min-width: calc((100% - 32px) / 2);
   }
 }
 

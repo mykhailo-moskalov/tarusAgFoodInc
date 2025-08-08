@@ -18,11 +18,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/swiper.js" type="module"></script>
     <script src="./js/translations.js" defer></script>
   </head>
   <body>
-    <header class="header" id="header">
+    <header id="header">
       <div class="container header-container">
         <a id="headerLogo" href="./index.html" class="logo"></a>
         <a id="headerAnchor" class="header-btn btn" href="#footer"></a>
@@ -38,81 +43,85 @@
       <section id="who">
         <div class="container who-container">
           <h2 id="whoTitle"></h2>
-          <ul class="who-list">
-            <li class="who-item">
-              <svg class="who-icon" width="76" height="76">
-                <use href="./img/sprite.svg#compass"></use>
-              </svg>
-              <h3 id="whoItemTitle1"></h3>
-              <p id="whoItemText1"></p>
-            </li>
-            <li class="who-item">
-              <svg class="who-icon" width="76" height="76">
-                <use href="./img/sprite.svg#magnifying-glass"></use>
-              </svg>
-              <h3 id="whoItemTitle2"></h3>
-              <p id="whoItemText2"></p>
-            </li>
-            <li class="who-item">
-              <svg class="who-icon" width="98" height="76">
-                <use href="./img/sprite.svg#loop"></use>
-              </svg>
-              <h3 id="whoItemTitle3"></h3>
-              <p id="whoItemText3"></p>
-            </li>
-            <li class="who-item">
-              <svg class="who-icon" width="76" height="76">
-                <use href="./img/sprite.svg#graph"></use>
-              </svg>
-              <h3 id="whoItemTitle4"></h3>
-              <p id="whoItemText4"></p>
-            </li>
-            <li class="who-item">
-              <svg class="who-icon" width="59" height="76">
-                <use href="./img/sprite.svg#building"></use>
-              </svg>
-              <h3 id="whoItemTitle5"></h3>
-              <p id="whoItemText5"></p>
-            </li>
-          </ul>
+          <div class="who-swiper swiper">
+            <ul class="who-list swiper-wrapper">
+              <li class="who-item swiper-slide">
+                <svg class="who-icon" width="76" height="76">
+                  <use href="./img/sprite.svg#magnifying-glass"></use>
+                </svg>
+                <h3 id="whoItemTitle1"></h3>
+                <p id="whoItemText1"></p>
+              </li>
+              <li class="who-item swiper-slide">
+                <svg class="who-icon" width="76" height="76">
+                  <use href="./img/sprite.svg#building"></use>
+                </svg>
+                <h3 id="whoItemTitle2"></h3>
+                <p id="whoItemText2"></p>
+              </li>
+              <li class="who-item swiper-slide">
+                <svg class="who-icon" width="98" height="76">
+                  <use href="./img/sprite.svg#loop"></use>
+                </svg>
+                <h3 id="whoItemTitle3"></h3>
+                <p id="whoItemText3"></p>
+              </li>
+              <li class="who-item swiper-slide">
+                <svg class="who-icon" width="76" height="76">
+                  <use href="./img/sprite.svg#graph"></use>
+                </svg>
+                <h3 id="whoItemTitle4"></h3>
+                <p id="whoItemText4"></p>
+              </li>
+              <li class="who-item swiper-slide">
+                <svg class="who-icon" width="59" height="76">
+                  <use href="./img/sprite.svg#compass"></use>
+                </svg>
+                <h3 id="whoItemTitle5"></h3>
+                <p id="whoItemText5"></p>
+              </li>
+            </ul>
+          </div>
           <p id="whoHintText"></p>
         </div>
       </section>
       <section id="products">
         <div class="container products-container">
           <h2 id="productsTitle"></h2>
-          <ul class="products-list">
-            <li class="products-item">
-              <img src="./img/products-1.webp" alt="" width="220" />
-              <h3 id="productsItemTitle1"></h3>
-              <p id="productsItemText1"></p>
-            </li>
-            <li class="products-item">
-              <img src="./img/products-2.webp" alt="" width="220" />
-              <h3 id="productsItemTitle2"></h3>
-              <p id="productsItemText2"></p>
-            </li>
-            <li class="products-item">
-              <img src="./img/products-3.webp" alt="" width="220" />
-              <h3 id="productsItemTitle3"></h3>
-              <p id="productsItemText3"></p>
-            </li>
-            <li class="products-item">
-              <img src="./img/products-4.webp" alt="" width="220" />
-              <h3 id="productsItemTitle4"></h3>
-              <p id="productsItemText4"></p>
-            </li>
-            <li class="products-item">
-              <img src="./img/products-5.webp" alt="" width="220" />
-              <h3 id="productsItemTitle5"></h3>
-              <p id="productsItemText5"></p>
-            </li>
-            <li class="products-item">
-              <img src="./img/products-6.webp" alt="" width="220" />
-              <h3 id="productsItemTitle6"></h3>
-              <p id="productsItemText6"></p>
-            </li>
-          </ul>
+          <div dir="rtl" class="products-swiper swiper">
+            <ul class="products-list swiper-wrapper">
+              <li class="products-item swiper-slide">
+                <img src="./img/products-1.webp" alt="" width="220" />
+                <h3 id="productsItemTitle1"></h3>
+                <p id="productsItemText1"></p>
+              </li>
+              <li class="products-item swiper-slide">
+                <img src="./img/products-2.webp" alt="" width="220" />
+                <h3 id="productsItemTitle2"></h3>
+                <p id="productsItemText2"></p>
+              </li>
+              <li class="products-item swiper-slide">
+                <img src="./img/products-3.webp" alt="" width="220" />
+                <h3 id="productsItemTitle3"></h3>
+                <p id="productsItemText3"></p>
+              </li>
+              <li class="products-item swiper-slide">
+                <img src="./img/products-4.webp" alt="" width="220" />
+                <h3 id="productsItemTitle4"></h3>
+                <p id="productsItemText4"></p>
+              </li>
+              <li class="products-item swiper-slide">
+                <img src="./img/products-5.webp" alt="" width="220" />
+                <h3 id="productsItemTitle5"></h3>
+                <p id="productsItemText5"></p>
+              </li>
+              <li class="products-item swiper-slide">
+                <img src="./img/products-6.webp" alt="" width="220" />
+                <h3 id="productsItemTitle6"></h3>
+                <p id="productsItemText6"></p>
+              </li>
+            </ul>
+          </div>
           <p id="productsHintText"></p>
         </div>
       </section>

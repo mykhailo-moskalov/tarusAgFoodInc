@@ -1,24 +1,9 @@
-.who-list {
-  display: flex;
-  gap: 32px;
-
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-}
-
 .who-item {
   border-radius: 16px;
   padding: 22px;
 
-  min-width: 100%;
-  scroll-snap-align: start;
-
   box-shadow: 0 4px 4px 2px rgba(43, 43, 43, 0.15);
   background: var(--clear-navy);
-
-  @media screen and (min-width: 1024px) {
-    min-width: calc((100% - 32px) / 2);
-  }
 }
 
 .who-item h3 {
