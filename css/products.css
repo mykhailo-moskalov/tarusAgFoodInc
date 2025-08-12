@@ -20,7 +20,7 @@
 .products-item {
   border-radius: 50px;
   padding: 24px 48px;
-  height: 340px;
+  height: 320px;
 
   box-shadow: 0 4px 4px 2px rgba(43, 43, 43, 0.15);
   background: var(--white);

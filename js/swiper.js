@@ -1,6 +1,6 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
-const whoSwiper = new Swiper('.swiper.who-swiper', {
+new Swiper(".swiper.who-swiper", {
   slidesPerView: 1,
 
   breakpoints: {
@@ -16,7 +16,7 @@ const whoSwiper = new Swiper('.swiper.who-swiper', {
   },
 });
 
-const productsSwiper = new Swiper('.swiper.products-swiper', {
+new Swiper(".swiper.products-swiper", {
   slidesPerView: 1,
 
   breakpoints: {
