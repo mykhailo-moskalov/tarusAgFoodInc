@@ -35,20 +35,24 @@ const translations = {
 
     productsItemTitle1: "Grains",
     productsItemText1:
-      "Wheat &bull; Corn &bull; Barley &bull; Oat Sorghum &bull; Millet",
+      "Wheat &bull; Corn<br />Barley &bull; Oat<br />Sorghum &bull; Millet",
     productsItemTitle2: "Pulses",
     productsItemText2:
-      "Yellow Peas &bull; Green Peas Chickpeas &bull; Red Lentils<br />Green Lentils",
+      "Yellow Peas &bull; Green Peas<br />Chickpeas &bull; Red Lentils<br />Green Lentils",
     productsItemTitle3: "Oilseeds",
     productsItemText3:
       "Sunflower Seeds<br />Soya Beans &bull; Rapeseeds<br />Mustard Seeds &bull; Flax Seeds",
     productsItemTitle4: "Edible Oils",
-    productsItemText4: "Sunflower Oil &bull; Soybean Oil Rapeseed Oil",
+    productsItemText4: "Sunflower Oil<br />Soybean Oil<br />Rapeseed Oil",
     productsItemTitle5: "Animal Feed & Meals",
     productsItemText5: "Sunflower Meal<br />Soybean Meal &bull; DDGS<br />Bran",
     productsItemTitle6: "Other Products",
     productsItemText6:
-      "Coffee &bull; Wheat Flour &bull; Citrus White Crystal Sugar &bull; MeaFruit and vegetable &bull; Fish &bull; Shrimp",
+      "Coffee &bull; Wheat Flour<br />White Crystal Sugar &bull; Meat",
+    productsItemTitle7: "Fruits & Veggies",
+    productsItemText7: "Citrus<br />Fruit<br />Vegetable",
+    productsItemTitle8: "Seafood",
+    productsItemText8: "Fish<br />Shrimp",
 
     productsHintText: "Swipe to see more",
 

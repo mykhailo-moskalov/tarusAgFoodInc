@@ -42,6 +42,9 @@
 .products-item img {
   margin: 0 auto;
   border-radius: 50px;
+
+  object-fit: cover;
+  height: 146px;
 }
 
 #productsHintText {

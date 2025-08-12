@@ -12,7 +12,7 @@ new Swiper(".swiper.who-swiper", {
 
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
 });
 
@@ -28,6 +28,6 @@ new Swiper(".swiper.products-swiper", {
 
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
 });
