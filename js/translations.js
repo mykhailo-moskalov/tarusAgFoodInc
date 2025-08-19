@@ -17,8 +17,7 @@ const translations = {
       "Our mission is rooted in trust, quality, and lasting partnerships. We value reliability, transparency, and efficiency to ensure consistent service across the entire supply chain.",
     whoItemTitle2: "Alternative investments",
     whoItemText2:
-      "Real estate, construction. ESG approach (sustainable investing). Creating valuable and reliable assets in the real estate sector by investing in promising construction projects and ensuring sustainable capital growth.",
-    whoItemTitle3: "What We Do",
+      "Real estate, global industrial warehousing, build out and management, construction. ESG approach (sustainable investing). Creating valuable and reliable assets in the real estate sector by investing in promising construction projects and ensuring sustainable capital growth.",
     whoItemText3:
       "We export agricultural goods and import food products worldwide. Our range includes grains, pulses, oils, feed, flour, and processed items for diverse international markets.",
     whoItemTitle4: "Trusted Expert",
